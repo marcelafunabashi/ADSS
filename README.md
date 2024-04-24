@@ -30,4 +30,5 @@ python -m pip install os
 1. Change the file path to the 'Cryptocurrencies.csv' dataset within the flask_app.py code file according to your file path.
 2. Save and reload all files, so as to make sure everything is working.
 3. Access web through your PythonAnywhere site (example: http://mfunabashi.pythonanywhere.com/ )
-
+## Important Note:
+* An initial attempt was done to create a database through MongoDB and connect in PythonAnywhere. However, PythonAnywhere free accounts can only make HTTP or HTTPS connections to a specific set of whitelisted sites, and MongoDB uses its own protocol that is not HTTP/HTTPS. Thus, TinyDB was used as the NoSQL source.
